@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 #include <math.h>
 using namespace std;
 int count;
@@ -81,6 +82,7 @@ struct senhaRandom{
 //struct para tratar o numero jogado pelo usuario
 struct numeroJogado
 {
+    
      int primeiroDigitoJ;
      int segundoDigitoJ;
      int terceiroDigitoJ;
@@ -214,7 +216,7 @@ void jogoDaSenha(){
 
 
 int main(){
-
+    srand(time(NULL));
     Cabecalho();
     int escolha;
     cout << "\n------ MENU ------\n";
